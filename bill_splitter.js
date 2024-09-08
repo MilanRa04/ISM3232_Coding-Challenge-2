@@ -20,3 +20,27 @@ function calculateTip(bill) {
 let testBill = 100;
 let testTip = calculateTip(testBill);
 console.log(`The tip for a bill of $${testBill} is $${testTip}`);
+
+// Task 4 and 5: Utilize arrays and Test Data
+
+// Data Set 1
+const bills1 = [275, 40, 430];
+const tips1 = bills1.map(bill => calculateTip(bill));
+const totals1 = bills1.map((bills1, index)=> bill +tips1[index]);
+
+// Output resutls for Data Set 1
+console.log('Data Set 1:');
+bills1.forEach((bill, index) => {
+    console.log(`The bill was $${bill}, the tip was $${tips1[index]}, and the total value is $${totals1[index]}`);
+})
+
+// Data Set 2
+const bills2 = [125, 555, 44];
+const tips2 = bills2.map(bill => calculateTip(bill));
+const totals2 = bills2.map((bills2, index)=> bill +tips2[index]);
+
+// Output resutls for Data Set 2
+console.log('Data Set 2:');
+bills2.forEach((bill, index) => {
+    console.log(`The bill was $${bill}, the tip was $${tips2[index]}, and the total value is $${totals2[index]}`);
+})
